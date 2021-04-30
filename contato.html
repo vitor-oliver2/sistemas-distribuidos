@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Poze do Rodo</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="_css/style.css">
+	<link rel="stylesheet" type="text/css" href="_css/form.css">
+	<script type="text/javascript" src="_javascript/validacoes.js"></script>
+</head>
+<body>
+<div id="interface">
+
+	<header id="cabecalho">
+
+		<nav id="menu">
+			<h1>Menu Principal</h1>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="amigos.html">Sobre os Integrantes</a></li>
+				<!-- <li><a href="galeria.html">Galeria</a></li> -->
+				<li><a href="contato.html">Contato</a></li>
+			</ul>
+		</nav>
+
+	</header>
+
+	<div id="inicio-form">
+		<h1>Gostou?</h1>
+		<img id="like" src="_images/Icons/like.png">
+
+		<p>Entre em contato e faça parte agora mesmo! <br>
+		(Perfil Sujeito a severa análise)</p>
+	</div>
+
+	<form name="formulario" method="POST" id="fContato" action="_php/enviaEmail.php" target="_blank" onsubmit="return validaForm()">
+		<fieldset id="pessoa">
+			<legend id="legenda">Dados Pessoais</legend>
+			<p id="aviso"><i>Campos com "*" são obrigatórios.</i></p>
+			<p><label for="cNome"> *Nome: <input type="text" name="nome" id="cNome" size="20" maxlength="50" placeholder="Nome Completo"></label></p>
+			<p><label for="cEmail"> *E-mail: <input type="text" name="email" id="cEmail" size="20" maxlength="100" placeholder="exemplo@mail.com"></label></p>
+			<p><label for="cTel"> Telefone: <input type="number" name="tel" id="cTel" size="20" maxlength="11" placeholder="(00)00000-0000">
+
+			<fieldset id="sexo">
+            	<legend>Sexo:</legend>
+            	<input type="radio" name="sexo" id="cMasc" value="M"> <label for="cMasc">Masculino</label><br>
+            	<input type="radio" name="sexo" id="cFem" value="F"> <label for="cFem">Feminino</label>
+        	</fieldset>
+
+  			<p><label for="cNasc"> Data de Nascimento <input type="date" name="nasc" id="cNasc"></label></p>
+		</fieldset>
+	
+		<fieldset id="mensagem">
+			<legend id="legenda">*Mensagem</legend>
+			<p><label for="cMsg"> Escreva o porque você deve fazer parte deste grupo: (ou qualquer outra coisa que quiser falar)</label></p> <textarea name="msg" id="cMsg" cols="45" rows="5" placeholder="Digite aqui sua mensagem"></textarea>
+		</fieldset>
+
+		<!-- <button id="enviar" type="submit">Enviar</button> -->
+		<!-- <input type="button" id="enviar" name="tEnviar" value="Enviar"> -->
+		<button id="enviar" type="submit">Enviar</button>
+	</form>
+
+
+	<footer id="rodape">
+		<a class="face" href="https://www.facebook.com/profile.php?id=100004323303945" target="_blank"></a>
+		<a class="insta" href="https://www.instagram.com/vitor.oliver2/" target="_blank"></a>
+		<a class="twitter" href="https://twitter.com/Vitor_oliver2?s=08" target="_blank"></a><br>
+		Created by <span>Vitão</span>
+	</footer>
+</div>
+</body>
+</html>

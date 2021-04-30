@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+section#corpo-full {
+	padding-bottom: 20px;
+}
+
+section#corpo-full h1, p {
+	text-align: center;
+}
+
+section#corpo-amigos {
+	width: 500px;
+	display: block;
+	float: left;
+	/*border: 1px solid white;*/
+}
+
+aside#integrantes {
+	display: block;
+	float: right;
+	width: 385px;
+	/*border: 1px solid white;*/
+}
+
+img#poze {
+	border: 1px #545454 dashed;
+	padding: 4px;
+}
+
+iframe#frame-amigos {
+	width: 400px;
+	height: 630px;
+	border: none;
+}
+
+aside#integrantes {
+	padding-bottom: 20px;
+}
